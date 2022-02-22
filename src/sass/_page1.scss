@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap%27');
+.page1div{
+display: flex;
+flex-direction: row;
+justify-content: center;
+    .page1{
+        width: 1110px;
+        height: auto;
+        margin-top: 79px;
+        color: white;
+        .row .col-md-6 img{
+            width: 120%;
+            height: auto;
+        }
+        h1{
+            color: #99EFD0;
+            font-family: Inter;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 0px;
+            text-align: left;
+            width: 531px;
+            height: 150px;
+            margin-top: 31px;
+        }  
+        p{
+            font-family: Gilroy-SemiBold;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #8476AA;;
+            padding: 10px 0px 25px;
+        }
+            button{
+            width: 157px;
+            height: 46px;
+            margin-right: 20px;
+            border-radius: 5px;
+            font-family: 'Rubik', sans-serif;
+            letter-spacing: 2px;
+            font-size: 12px;
+            }
+        button:nth-child(3){
+            background-color: #F2994A;
+            border: 1px solid #F2994A;
+            color: white;
+            transition: 0.5s;
+            &:hover{
+                color: #F2994A;
+                border: 1px solid #F2994A;
+                background-color: transparent;
+            }
+            }
+        button:nth-child(4){
+            color: #F2994A;
+            border: 1px solid #F2994A;
+            background-color: transparent;
+            transition: 0.5s;
+            &:hover{
+            background-color: #F2994A;
+            border: 1px solid #F2994A;
+            color: white;
+            }
+        }
+        .videodiv{
+            width: 540px;
+            height: 80px;
+            margin:45px 12px;
+        .video{
+            width: 140px;
+            height: 80px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #361C5D;
+            
+            .playdiv{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: #361C5D;
+                }
+            }
+        }
+        #pvideo{
+            padding: 0;
+            margin: 0;
+            
+        }
+        #p2video{
+            font-size: 14px;
+            color: grey;
+        }
+    }
+    }  
+}
