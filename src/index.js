@@ -7,9 +7,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 

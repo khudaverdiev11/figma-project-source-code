@@ -1,23 +1,23 @@
-import Footer from './component/Footer';
-import Header from './component/Header';
-import Page1 from './component/Page1';
-import Page2 from './component/Page2';
-import Page3 from './component/Page3';
-import Page4 from './component/Page4';
-import './sass/style.css';
+import User from "./component/User";
+import Posts from "./component/Posts";
+import Comments from "./component/Comments";
+import Homepage from "./component/Homepage";
+import Popup from "./component/Popup";
+import { Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import './sass/style.scss'
 
 function App() {
-
-return (
-    <div className="app">
-  <Header/>
-  <Page1/>
-  <Page2/>
-  <Page3/>
-  <Page4/>
-  <Footer/>
-    </div> 
-  );
+  return (
+    <BrowserRouter>
+      <Link to='/'>Back to homepage</Link>
+      <Route exact path="/">{<Homepage />}</Route>
+      <Route exact path="/User">{<User />}</Route>
+      <Route exact path="/Posts">{<Posts />}</Route>
+      <Route exact path="/Comments">{<Comments />}</Route>
+      <Route exact path="/Popup">{<Popup />}</Route>
+    </BrowserRouter>
+  )
 }
 
 export default App;
